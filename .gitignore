@@ -1,0 +1,25 @@
+# secrets
+.env
+.env.*
+secrets/
+*.key
+*.pem
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# scratch
+tmp/
+scratch/
+
+# python / streamlit
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+.venv/
+venv/

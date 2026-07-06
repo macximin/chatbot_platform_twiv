@@ -1,0 +1,15 @@
+slug: _TEMPLATE
+name: 《캐릭터명》
+concept_title: ""
+channel_display_name: ""
+channel_handle: ""
+platform: Twiv
+notion_url: ""          # Notion 캐릭터 도메인/<이름> 페이지 (양방향 포인터)
+promoted_from: ""       # backlog IDEA id (예: IDEA-00X)
+status: 기획            # 기획/캐논/프로필/영상·이미지/감리/등록 준비/라이브/운영·관찰/파킹/폐기
+category: ""            # 로맨스/힐링/판타지/일상/코미디/스포츠
+hashtags: []
+copy_risk: false        # 외부 카피 주의 소재면 true (+ canon 감리 포인트 명시)
+onboarding_video: ""    # media/온보딩.mp4 (있으면 파일명, INDEX.md와 일치)
+images: 0               # images/ 파일 수 (INDEX.md와 일치)
+live_url: ""            # 라이브 후 twiv 캐릭터 URL
