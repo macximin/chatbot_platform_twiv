@@ -16,7 +16,6 @@ import re
 from pathlib import Path
 
 import streamlit as st
-import streamlit.components.v1 as components
 from PIL import Image, ImageOps
 
 st.set_page_config(page_title="platform_preview", page_icon="💬", layout="centered")
@@ -319,7 +318,7 @@ AUTOPLAY_JS = """
 
 
 def render(body_html, height):
-    components.html(CSS + body_html + AUTOPLAY_JS, height=height, scrolling=False)
+    st.iframe(CSS + body_html + AUTOPLAY_JS, height=height)
 
 
 def nav_bar(active="chat"):
