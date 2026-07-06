@@ -25,6 +25,7 @@ CHARS_DIR = Path(__file__).resolve().parent.parent / "characters"
 COVER_NAMES = ("01_커버.png", "커버.png", "01_thumbnail.png")
 VIDEO_NAMES = ("온보딩.mp4",)
 IMG_EXT = {".png", ".jpg", ".jpeg", ".webp"}
+DEFAULT_SLUG = "sports-yuserin"
 
 # canon에 없는 데모 수치 (프리뷰용, 가짜)
 DEMO_LIKES = "12.4천"
@@ -189,7 +190,7 @@ def list_chars():
         if dd.is_dir() and dd.name != "_TEMPLATE" and (dd / "canon.md").exists():
             if find_cover(dd / "images") or find_video(dd / "media"):
                 out.append(dd.name)
-    return out
+    return sorted(out, key=lambda slug: (slug != DEFAULT_SLUG, slug))
 
 
 # ------------------------------------------------ 공통 조각
